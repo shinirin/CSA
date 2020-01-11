@@ -72,6 +72,25 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<p>2019 CSA Term Project</p>
+						<p>
+							<script language="javascript">
+								var Today = new Date();
+								document.write(Today.getFullYear() + "." + Today.getMonth()+1) + "." + Today.getDate());
+							</script>
+						</p>
+						<p>
+							<script language="javascript">
+								function ShowTime(){
+									var NowDate = new Date();
+									var h = NowDate.getHours();
+									var m = NowDate.getMinutes();
+									var s = NowDate.getSeconds();
+									document.getElementByld('showbox').innerHTML = h + ' : ' + m + ' : ' + s;
+									setTimeout('ShowTime()', 1000);
+								}
+							</script>
+							<body onload = "ShowTime()">
+						</p>
 					</footer>
 
 			</div>
